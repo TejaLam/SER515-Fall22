@@ -26,6 +26,10 @@ public class Facade {
 
 	}
 
+	public void discussBidding() {
+
+	}
+
 	public void submitBidding() {
 
 	}
@@ -42,12 +46,12 @@ public class Facade {
 
 	}
 
-	public void AttachProductToUser() {
+	public void attachProductToUser() {
 
 	}
 
-	public void selectProduct() {
-
+	public Product selectProduct() {
+		return null;
 	}
 
 	public void productOperation() {

@@ -1,31 +1,44 @@
-public class Person {
+public abstract class Person {
 
-	private ProductMenu theProductMenu;
+	int type = 0; // type=0 : buyer, type=1 seller
 
-	private ProductMenu productMenu;
+	String UserName;
+	 ProductMenu theProductMenu;
 
-	public void showLabels() {
+	ClassProductList classProductList;
 
+	Trading trading;
+
+	public Person()
+	{
+		classProductList = new ClassProductList();
 	}
 
-	public ProductMenu CreateProductMenu() {
-		return null;
-	}
-
-	public void showAddButton() {
-
-	}
-
-	public void showMenu() {
-
-	}
+	abstract public ProductMenu CreateProductMenu(Product product, int theLevel);
 
 	public void showViewButton() {
-
+		theProductMenu.showViewButton();
 	}
 
 	public void showRadioButton() {
-
+		theProductMenu.showRadioButton();
 	}
+	public void showLabels() {
+		theProductMenu.showLabels();
+	}
+	public boolean showMenu(){
+		return false;
+	}
+	public void showAddButton() {
+		theProductMenu.showAddButton();
+	}
+	public void show() {
+		theProductMenu.show();
+	}
+
+	public boolean ifLogout() {
+		return theProductMenu.ifLogout();
+	}
+
 
 }

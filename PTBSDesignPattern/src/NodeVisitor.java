@@ -1,15 +1,9 @@
-public class NodeVisitor {
+public abstract class NodeVisitor {
 
-	public void visitProduct(Product product) {
+	public abstract void visitProduct(Product product);
 
-	}
+	public abstract void visitTrading(Trading trading);
 
-	public void visitTrading(Trading trading) {
-
-	}
-
-	public void visitFacade(Facade facade) {
-
-	}
+	public abstract void visitFacade(Facade facade);
 
 }
