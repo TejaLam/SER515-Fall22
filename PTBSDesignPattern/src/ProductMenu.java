@@ -1,68 +1,11 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.util.Iterator;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public abstract class ProductMenu extends JDialog {
+public abstract class ProductMenu {
 
-	 Person person = null;
-
-	 Product product;
-
-	 boolean bLogout = true;
-
-	JRadioButton AssignmentRadio = new JRadioButton();
-	JComboBox AssignmentCombox = new JComboBox();
-	JButton AssignmentViewButton = new JButton();
-	JButton AssignmentAddButton = new JButton();
-	JRadioButton OptionRadio = new JRadioButton();
-	JLabel AssignmentContentLabel = new JLabel();
-	JComboBox OptionCombo = new JComboBox();
-	JButton OptionViewButton = new JButton();
-	JButton OptionAddButton = new JButton();
-	JButton buttonChangeCourse = new JButton();
-	JButton buttonLogout = new JButton();
-
-	public ProductMenu()
-	{
-
-		try
-		{
-			jbInit();
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-		setModal(true);
-		setSize(503,294);
-	}
-
-	private void jbInit() throws Exception
-	{
-		buttonChangeCourse.setText("ChangeCourse");
-		buttonChangeCourse.setBounds(new Rectangle(101, 211, 73, 37));
-		buttonChangeCourse.addActionListener(new java.awt.event.ActionListener()
-		{
-			public void actionPerformed(ActionEvent e)
-			{
-				buttonChangeCourse_actionPerformed(e);
-			}
-		});
-		this.getContentPane().setLayout(null);
-		this.setTitle("");
-		buttonLogout.setText("Logout");
-		buttonLogout.setBounds(new Rectangle(267, 215, 73, 37));
-		buttonLogout.addActionListener(new java.awt.event.ActionListener()
-		{
-			public void actionPerformed(ActionEvent e)
-			{
-				buttonLogout_actionPerformed(e);
-			}
-		});
-		this.getContentPane().add(buttonChangeCourse, null);
-		this.getContentPane().add(buttonLogout, null);
-	}
+	Person person = null;
 
 	public abstract void showMenu();
 
@@ -76,42 +19,25 @@ public abstract class ProductMenu extends JDialog {
 
 	public abstract void showComboxes();
 
+	public ArrayList<Product> product;
+	public ArrayList<String> options;
 
-	void AssignmentAddButton_actionPerformed(ActionEvent e)
-	{
-		Hacs.theFacade.AddAssignment(theCourse);
-		refresh();
+	public ProductMenu(Person person) throws FileNotFoundException {
+		addProducts("/Users/tlam23/Desktop/MS Subjects/SER 515/UserProduct.txt/", person);
 	}
-	void AssignmentViewButton_actionPerformed(ActionEvent e)
-	{
-		Assignment theAss=(Assignment)AssignmentCombox.getSelectedItem() ;
-		Hacs.theFacade.ViewAssignment(theAss);
-	}
-	void refresh()
-	{
-		AssignmentCombox.removeAllItems() ;
-		Iterator Iter=product.assignmentList.iterator() ;
-		while(Iter.hasNext() )
-		{
-			AssignmentCombox.addItem(Iter.next() );
+	public void addProducts (String path, Person person) throws FileNotFoundException {
+			this.product = new ArrayList<Product>();
+
+			Scanner sc = new Scanner(new File(path));
+			while (sc.hasNextLine()) {
+				String k[] = sc.nextLine().split(":");
+				if (k[0].equals(person.username)) {
+					this.product.add(new Product(k[1]));
+				}
+
+			}
+			this.options = new ArrayList<String>();
+
 		}
-	}
 
-	void buttonChangeCourse_actionPerformed(ActionEvent e)
-	{
-		bLogout=false;
-		hide();
 	}
-
-	void buttonLogout_actionPerformed(ActionEvent e)
-	{
-		bLogout=true;
-		hide();
-	}
-
-	boolean ifLogout()
-	{
-		return bLogout;
-	}
-
-}

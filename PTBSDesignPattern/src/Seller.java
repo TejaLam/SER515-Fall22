@@ -1,28 +1,26 @@
+import java.io.FileNotFoundException;
+
 public class Seller extends Person {
 
-	public Seller()
-	{
-		type = 1; // seller
+	public Seller(String username, String password) {
+		this.username=username;
+		this.password=password;
 	}
-	public boolean showMenu() {
-		super.showMenu();
-		showAddButton();
-		showViewButton();
-		showRadioButton();
-		show();
-		return ifLogout();
+	public void showMenu() {
+
 	}
 
-	public ProductMenu CreateProductMenu(Product theProduct,int level) {
 
-		if (level == 0)/// 0: MeatProduct
-		{
-			theProductMenu = new MeatProductMenu();
-		} else/// 1: ProduceProduct
-		{
-			theProductMenu = new ProduceProductMenu();
+	public void CreateProductMenu() {
+		// TODO Auto-generated method stub
+		System.out.println("Product for: "+this.username);
+		try {
+			this.productMenu = new ProductMenuFactory(this);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		return theProductMenu;
+
 	}
 
 }

@@ -7,5 +7,8 @@ public class Trading {
 	public void accept(NodeVisitor visitor) {
 
 	}
+	public Trading(String string) {
+		// TODO Auto-generated constructor stub
+	}
 
 }

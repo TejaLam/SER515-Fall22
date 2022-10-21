@@ -2,6 +2,10 @@ public class ProductIterator {
 
 	private ClassProductList classProductList;
 
+
+
+
+
 	public boolean hasNext() {
 		return false;
 	}
