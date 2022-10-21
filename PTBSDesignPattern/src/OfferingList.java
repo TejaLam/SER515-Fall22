@@ -1,9 +1,9 @@
 public class OfferingList {
 
-	private Trading trading;
+	private OfferingIterator iterator_offering;
 
-	private OfferingIterator offeringIterator;
+	private Trading theTrading;
 
-	private Offering[] offering;
+	private Offering[] list_of_offering;
 
 }

@@ -1,14 +1,13 @@
 public class Trading {
 
-	private Product product;
 
-	private OfferingList offeringList;
+	private OfferingList List_of_offering;
 
-	public void accept(NodeVisitor visitor) {
+	public void accept(NodeVisitor nodeVisitor) {
 
 	}
+	private Product product;
 	public Trading(String string) {
-		// TODO Auto-generated constructor stub
 	}
 
 }

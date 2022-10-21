@@ -1,20 +1,23 @@
 public class ReminderVisitor extends NodeVisitor {
 
 	private Reminder m_Reminder;
-	Trading trading;
+	Trading trade;
 
 
 	private ClassProductList classProductList;
 
-	public void visitProduct(ProductList productList) {
-		System.out.println("Iterator Design Pattern");
-		ListIterator li = productList.listIterator();
+	public void visitProduct(ClassProductList productList) {
+		System.out.println("Design Pattern -------- Iterator ");
+		ListIterator listing = productList.listIterator();
 		int number = 0;
-		while (li.hasNext()) {
-			System.out.println((number + 1) + ":" + li.Next().toString());
+		while (listing.hasNext()) {
+			System.out.println((number + 1) + ":" + listing.Next().toString());
 			number++;
-
 		}
+
+	}
+
+	public void visitProduct(Product product) {
 
 	}
 

@@ -1,21 +1,14 @@
 public class Product {
 
-	private ClassProductList classProductList;
-
 	String productName;
 	Trading[] trading;
 
 	public Product(String name) {
 		this.productName = name;
-		this.trading = new Trading[2];
-		int i;
-		for (i = 0; i <= 1; i++) {
-			if (i == 0)
-				this.trading[i] = new Trading("Trading for Produce Products " + " " + this.productName);
-			if (i == 1)
-				this.trading[i] = new Trading("Trading for Meat Products " + " " + this.productName);
+		int length = 2;
+		this.trading = new Trading[length];
+		this.trading[0] = new Trading("produce products trading " + " " + this.productName);
+		this.trading[1] = new Trading("meat products trading " + " " + this.productName);
 
-		}
-
-	}
+}
 }

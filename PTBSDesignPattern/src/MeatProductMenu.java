@@ -14,6 +14,19 @@ public class MeatProductMenu extends ProductMenu {
 
 	}
 
+	public MeatProductMenu(Person input_person) throws FileNotFoundException {
+		super(input_person);
+		for(int i=0; i<(this.product).size(); i++) {
+
+			if(input_person.getClass().equals(Buyer.class))
+				this.options.add("Buyers meat produce products");
+			else
+				this.options.add("Sellers meat produce products");
+		}
+
+
+	}
+
 	public void showRadioButton() {
 
 	}
@@ -23,17 +36,6 @@ public class MeatProductMenu extends ProductMenu {
 	}
 
 	public void showComboxes() {
-
-	}
-	public MeatProductMenu(Person person) throws FileNotFoundException {
-		super(person);
-		for(int i=0; i<(this.product).size(); i++) {
-			if(person.getClass().equals(Buyer.class))
-				this.options.add("Meat Produce Products for Buyers");
-			else
-				this.options.add("Meat Produce products for Sellers");
-		}
-
 
 	}
 

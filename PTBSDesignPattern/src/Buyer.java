@@ -1,9 +1,9 @@
 import java.io.FileNotFoundException;
 
 public class Buyer extends Person {
-	public Buyer(String input_username, String password) {
+	public Buyer(String input_username, String pword) {
 		this.username = input_username;
-		this.password = password;
+		this.password = pword;
 	}
 
 	public void showMenu() {
@@ -11,13 +11,11 @@ public class Buyer extends Person {
 	}
 
 	public void CreateProductMenu() {
-		// TODO Auto-generated method stub
-		System.out.println("Product for: " + this.username);
+		System.out.println("product for the given " + this.username);
 		try {
 			this.productMenu = new ProductMenuFactory(this);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (FileNotFoundException excep) {
+			excep.printStackTrace();
 		}
 	}
 }

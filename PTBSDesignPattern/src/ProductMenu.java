@@ -28,9 +28,9 @@ public abstract class ProductMenu {
 	public void addProducts (String path, Person person) throws FileNotFoundException {
 			this.product = new ArrayList<Product>();
 
-			Scanner sc = new Scanner(new File(path));
-			while (sc.hasNextLine()) {
-				String k[] = sc.nextLine().split(":");
+			Scanner scan = new Scanner(new File(path));
+			while (scan.hasNextLine()) {
+				String k[] = scan.nextLine().split(":");
 				if (k[0].equals(person.username)) {
 					this.product.add(new Product(k[1]));
 				}

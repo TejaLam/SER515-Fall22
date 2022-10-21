@@ -2,22 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb9d806-004e-4d79-b8ed-c3016079adb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductMenuFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Buyer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Buyer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ClassProductList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ClassProductList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Facade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Facade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ListIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/MeatProductMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/MeatProductMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/NodeVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/NodeVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/OfferingList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/OfferingList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProduceProductMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProduceProductMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductList$ProductIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductMenuFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ProductMenuFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Reminder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Reminder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ReminderVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/ReminderVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Seller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Seller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Trading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PTBSDesignPattern/Trading.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClassProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassProductList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfferingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProductIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductMenuFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenuFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reminder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReminderVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReminderVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />

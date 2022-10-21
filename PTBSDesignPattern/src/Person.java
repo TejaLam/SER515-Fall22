@@ -12,18 +12,18 @@ public abstract class Person {
 
 	public abstract void showMenu();
 	public boolean checkUser(String string) {
-		Scanner sc;
+		Scanner scanning;
 		try {
-			sc = new Scanner(new File(string));
-			while (sc.hasNextLine()) {
-				String s1[]= sc.next().split(":");
+			scanning = new Scanner(new File(string));
+			while (scanning.hasNextLine()) {
+				String str[]= scanning.next().split(":");
 
-				if(s1[0].equals(this.username)&&s1[1].equals(this.password)) {
+				if(str[0].equals(this.username)&&str[1].equals(this.password)) {
 					return true;
 				}
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println("Error finding the user");
+			System.out.println("Cannot find the user so error");
 			e.printStackTrace();
 		}
 		return false;
@@ -58,22 +58,17 @@ public abstract class Person {
 
 	}
 	public void showMenu(int choice) {
-		if(choice==1) {
-			ProduceProductMenu menu=this.productMenu.produceMenu;
-			for(int i=0; i<menu.product.size();i++) {
-				//System.out.println(per.username);
-				System.out.println(":"+menu.product.get(i).productName);
-			}
-			System.out.println("Select from below");
-		}
-		else {
+		if(choice==2) {
 			MeatProductMenu menu=this.productMenu.meatMenu;
 			for(int i=0; i<menu.product.size();i++) {
-
-				//System.out.println(per.username);
 				System.out.println(":"+menu.product.get(i).productName);
 			}
-			System.out.println("Select from below");
+		}
+		else {
+				ProduceProductMenu menu=this.productMenu.produceMenu;
+				for(int i=0; i<menu.product.size();i++) {
+					System.out.println(":"+menu.product.get(i).productName);
+			}
 		}
 
 	}
